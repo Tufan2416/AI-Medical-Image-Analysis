@@ -94,7 +94,8 @@ def train(data_dir: str = "data/raw",
     # ── Step 5: Save Plots ────────────────────────────────
     logger.info("Step 5/5 → Saving training plots...")
     plot_training_history(history)
-
+    model.save("models/final_model.h5")
+    print("Model saved successfully")
     # Print final metrics
     final_train_acc = history.history["accuracy"][-1]
     final_val_acc   = history.history["val_accuracy"][-1]
