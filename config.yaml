@@ -1,0 +1,52 @@
+# ============================================================
+# config.yaml — Central Configuration
+# AI-Powered Medical Image Analysis System
+# ============================================================
+
+project:
+  name: "AI-Powered Medical Image Analysis System"
+  version: "2.0.0"
+  author: "Your Name"
+  github: "https://github.com/yourusername/AI-Medical-Image-Analysis"
+
+dataset:
+  name: "Chest X-Ray Images (Pneumonia)"
+  source: "https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia"
+  classes:
+    - NORMAL
+    - PNEUMONIA
+  num_classes: 2
+  image_size: [224, 224]
+  channels: 3
+
+training:
+  batch_size: 32
+  epochs: 20
+  learning_rate: 0.0001
+  validation_split: 0.2
+  early_stopping_patience: 5
+  reduce_lr_patience: 3
+
+model:
+  backbone: "MobileNetV2"          # Options: MobileNetV2, ResNet50, EfficientNetB0
+  pretrained_weights: "imagenet"
+  fine_tune_layers: 30
+  dropout_rate: 0.3
+  dense_units: 128
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  data_sample: "data/sample"
+  models: "models"
+  outputs: "outputs"
+  plots: "outputs/plots"
+  predictions: "outputs/predictions"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+
+streamlit:
+  title: "🏥 AI Medical Image Diagnosis"
+  theme_color: "#0066CC"

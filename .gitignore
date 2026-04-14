@@ -1,0 +1,63 @@
+# ============================================================
+# .gitignore — AI Medical Image Analysis System
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter Notebooks Checkpoints
+.ipynb_checkpoints/
+*.ipynb_metadata
+
+# Data — exclude large raw data, keep sample
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/sample/
+
+# Trained Models (large files)
+models/*.h5
+models/*.keras
+models/*.pb
+!models/.gitkeep
+
+# Environment Variables
+.env
+*.env
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Outputs — keep structure, exclude large files
+outputs/plots/*.png
+outputs/predictions/*.png
+!outputs/plots/.gitkeep
+!outputs/predictions/.gitkeep
+
+# Logs
+*.log
+logs/
+venv/
+venv310/
+__pycache__/
+*.pyc
