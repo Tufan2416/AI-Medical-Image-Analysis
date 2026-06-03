@@ -29,7 +29,6 @@ data/processed/*
 !data/sample/
 
 # Trained Models (large files)
-models/*.h5
 models/*.pb
 !models/.gitkeep
 
