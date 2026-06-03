@@ -11,7 +11,7 @@
 
 **An end-to-end AI system for automated chest X-ray diagnosis with Explainable AI**
 
-[🚀 Live Demo]([#live-demo](https://ai-medical-image-analysis-axcbeppehj9h7bdqpjxhri.streamlit.app/)) • [📖 Docs](docs/) • [⚡ Quick Start](#quick-start) • [🎯 Results](#results)
+[🚀 Live Demo]([https://ai-medical-image-analysis-axcbeppehj9h7bdqpjxhri.streamlit.app/]) • [📖 Docs](docs/) • [⚡ Quick Start](#quick-start) • [🎯 Results](#results)
 
 </div>
 
