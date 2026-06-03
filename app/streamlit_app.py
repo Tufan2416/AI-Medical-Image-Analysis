@@ -95,7 +95,7 @@ def get_model():
     cfg = load_config()
     model_path = os.path.join(
         os.path.dirname(__file__), "..",
-        cfg["paths"]["models"], "best_model.keras"
+        cfg["paths"]["models"], "fixed_model.h5"
     )
     if not os.path.exists(model_path):
         return None
