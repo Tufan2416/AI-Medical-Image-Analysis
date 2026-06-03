@@ -7,3 +7,4 @@ seaborn
 scikit-learn
 pillow
 opencv-python-headless
+PyYAML==6.0.2
