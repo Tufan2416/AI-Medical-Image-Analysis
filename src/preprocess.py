@@ -102,3 +102,17 @@ def preprocess_pil_image(pil_image, img_size: tuple = (224, 224)) -> np.ndarray:
     arr = np.array(pil_image, dtype=np.float32) / 255.0
     arr = np.expand_dims(arr, axis=0)
     return arr
+from PIL import Image
+import numpy as np
+
+def preprocess_pil_image(image, img_size=(224, 224)):
+    image = image.resize(img_size)
+    image = np.array(image)
+
+    if len(image.shape) == 2:
+        image = np.stack([image] * 3, axis=-1)
+
+    image = image / 255.0
+    image = np.expand_dims(image, axis=0)
+
+    return image
