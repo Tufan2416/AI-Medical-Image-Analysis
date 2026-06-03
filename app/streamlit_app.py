@@ -390,8 +390,8 @@ def main():
 
     st.markdown("---")
     st.markdown(
-        "Built with ❤️ using TensorFlow, Streamlit & Grad-CAM | "
-        "[GitHub](https://github.com/yourusername/AI-Medical-Image-Analysis)"
+        "Built with ❤️ By- Tufan Chowdhury | "
+        "[GitHub](https://github.com/Tufan2416/AI-Medical-Image-Analysis)"
     )
 
 
