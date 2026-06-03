@@ -108,7 +108,7 @@ streamlit run app/streamlit_app.py
 
 ## 🚀 Live Demo
 
-> 🌐 **[Try it live →](https://your-app.streamlit.app)**  ← *(Deploy to Streamlit Cloud and paste URL here)*
+> 🌐 **[Try it live →]([https://your-app.streamlit.app](http://localhost:8502/))**  ← *(Deploy to Streamlit Cloud and paste URL here)*
 
 ---
 
@@ -231,26 +231,6 @@ curl -X POST http://localhost:8000/predict \
 *Upload X-ray → Instant prediction + Grad-CAM*
 
 ![Streamlit UI](images/screenshots/streamlit_ui.png)
-
-### Grad-CAM Explainability
-*Red regions = where the AI focused*
-
-![Grad-CAM](images/screenshots/gradcam_output.png)
-
-### Training Curves
-*Accuracy and loss over 20 epochs*
-
-![Training](images/screenshots/training_history.png)
-
-### Confusion Matrix
-*Per-class prediction breakdown*
-
-![Confusion](images/screenshots/confusion_matrix.png)
-
-### API Response
-*FastAPI Swagger UI + JSON response*
-
-![API](images/screenshots/api_swagger.png)
 
 ---
 
