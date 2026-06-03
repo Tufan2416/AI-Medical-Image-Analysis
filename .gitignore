@@ -61,3 +61,7 @@ venv/
 venv310/
 __pycache__/
 *.pyc
+venv/
+venv310/
+__pycache__/
+*.pyc
