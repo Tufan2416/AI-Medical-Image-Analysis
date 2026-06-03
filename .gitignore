@@ -30,7 +30,6 @@ data/processed/*
 
 # Trained Models (large files)
 models/*.h5
-models/*.keras
 models/*.pb
 !models/.gitkeep
 
